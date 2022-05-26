@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@400;500;600;700&display=swap');
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* ROOT VARIABLES */
+:root {
+    --title-color: #f15bb5;
+
+}
+
+
+
+
+/* BODY STYLES */
+body {
+    background-color: #f7dfdf;
+    font-family: 'Akshar', sans-serif;
+}
+
+svg {
+    position: absolute;
+    z-index: -100;
+}
+
+
+
+
+
+/* MAIN STYLES */
+.navbar {
+    display: flex;
+    padding: 1.2rem 4.2rem;
+    justify-content: space-between  ;
+    align-items: center;
+    background-color: #406abf;
+}
+
+.fa-github {
+    color: #fff;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+
+.fa-github:hover {
+    color: #000;
+}
+
+.btn__theme {
+    width: 90px;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #131d2a;
+    cursor: pointer;
+    transition: .3s ease-in;
+}
+
+.btn__theme:hover {
+    background-color: #fff;
+}
+
+.fa-moon {
+    width: 100%;
+    color: #fff;
+}
+
+.btn__theme:hover > .fa-moon {
+    color: #000;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5.5rem;
+}
+
+.chrono__container {
+    width: 450px;
+    height: 240px;
+    border: 2px solid #000;
+    background-color: #fff;
+    text-align: center;
+}
+
+.chrono {
+    margin: 3rem 0 1.5rem 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.btn__start {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #2c0b8e;
+    background: #2c0b8e;
+}
+
+
+.btn__start:hover {
+    background: #fff;
+    color: #2c0b8e
+}
+
+.btn__reset {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #f01818;
+    background: #f01818;
+}
+
+.btn__reset:hover {
+    background: #fff;
+    color: #f01818;
+}
