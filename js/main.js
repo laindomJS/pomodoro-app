@@ -3,6 +3,11 @@ const buttons = document.querySelectorAll('.btn');
 const min = document.querySelector('.minutes');
 const sec = document.querySelector('.seconds');
 const btnStart = document.querySelector('.btn__start');
+const change = document.querySelector('#change');
+
+
+// CONDITIONAL
+
 
 // EVENTS 
 buttons.forEach((btn) => {
@@ -14,14 +19,19 @@ buttons.forEach((btn) => {
             min.textContent = '25';
             sec.textContent = '00';
             stop();
+        } else if (btnClass.contains('break')) {
+            min.textContent = '10';
+            sec.textContent = '00';
+            minutes = 10;
+            seconds = 60;
         }
     })
 })
 
 
 
-minutes = 25;
-seconds = 60;
+let minutes = 25;
+let seconds = 60;
 let int;
 
 // FUNCTIONS
@@ -49,7 +59,6 @@ start = () => {
     }
 
     int = setTimeout(start, 1000);
-
 }
 
 
