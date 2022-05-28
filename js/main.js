@@ -22,8 +22,6 @@ buttons.forEach((btn) => {
         } else if (btnClass.contains('break')) {
             min.textContent = '10';
             sec.textContent = '00';
-            minutes = 10;
-            seconds = 60;
         }
     })
 })
